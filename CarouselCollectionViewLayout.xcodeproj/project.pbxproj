@@ -16,6 +16,8 @@
 		74473A2A25611F250096D0E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74473A2825611F250096D0E7 /* Main.storyboard */; };
 		74473A2C25611F270096D0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74473A2B25611F270096D0E7 /* Assets.xcassets */; };
 		74473A2F25611F270096D0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74473A2D25611F270096D0E7 /* LaunchScreen.storyboard */; };
+		74473A382561274A0096D0E7 /* CarouselCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74473A372561274A0096D0E7 /* CarouselCollectionViewLayout.swift */; };
+		74473A3D256140FD0096D0E7 /* CarouselCollectionViewLayout.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 74473A3C256140FD0096D0E7 /* CarouselCollectionViewLayout.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		74473A2B25611F270096D0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74473A2E25611F270096D0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74473A3025611F270096D0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74473A372561274A0096D0E7 /* CarouselCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewLayout.swift; sourceTree = "<group>"; };
+		74473A3C256140FD0096D0E7 /* CarouselCollectionViewLayout.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CarouselCollectionViewLayout.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		744739F625611DE60096D0E7 = {
 			isa = PBXGroup;
 			children = (
+				74473A3C256140FD0096D0E7 /* CarouselCollectionViewLayout.podspec */,
 				74473A0225611DE60096D0E7 /* CarouselCollectionViewLayout */,
 				74473A0D25611DE60096D0E7 /* CarouselCollectionViewLayoutTests */,
 				74473A2125611F250096D0E7 /* Example */,
@@ -96,6 +101,7 @@
 			children = (
 				74473A0325611DE60096D0E7 /* CarouselCollectionViewLayout.h */,
 				74473A0425611DE60096D0E7 /* Info.plist */,
+				74473A372561274A0096D0E7 /* CarouselCollectionViewLayout.swift */,
 			);
 			path = CarouselCollectionViewLayout;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				TargetAttributes = {
 					744739FF25611DE60096D0E7 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					74473A0825611DE60096D0E7 = {
 						CreatedOnToolsVersion = 12.1;
@@ -235,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74473A3D256140FD0096D0E7 /* CarouselCollectionViewLayout.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74473A382561274A0096D0E7 /* CarouselCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +447,7 @@
 		74473A1525611DE60096D0E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22VQ353X6R;
@@ -454,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taewoo.CarouselCollectionViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +473,7 @@
 		74473A1625611DE60096D0E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22VQ353X6R;
@@ -486,6 +498,7 @@
 		74473A1825611DE60096D0E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22VQ353X6R;
 				INFOPLIST_FILE = CarouselCollectionViewLayoutTests/Info.plist;
@@ -504,6 +517,7 @@
 		74473A1925611DE60096D0E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22VQ353X6R;
 				INFOPLIST_FILE = CarouselCollectionViewLayoutTests/Info.plist;
