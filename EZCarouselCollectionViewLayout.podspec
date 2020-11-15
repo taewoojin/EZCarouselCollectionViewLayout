@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint CarouselCollectionViewLayout.podspec' to ensure this is a
+#  Be sure to run `pod spec lint EZCarouselCollectionViewLayout.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "CarouselCollectionViewLayout"
+  spec.name         = "EZCarouselCollectionViewLayout"
   spec.version      = "0.0.1"
-  spec.summary      = "CarouselCollectionViewLayout is a layout for easy carousel effect implementation."
+  spec.summary      = "EZCarouselCollectionViewLayout is a layout for easy carousel effect implementation."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,9 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "The carousel effect can be used in many places.
-                        CarouselCollectionViewLayout makes it easy to implement simple carousel effects."
+                        EZCarouselCollectionViewLayout makes it easy to implement simple carousel effects."
 
-  spec.homepage     = "https://github.com/taewoojin/CarouselCollectionViewLayout"
+  spec.homepage     = "https://github.com/taewoojin/EZCarouselCollectionViewLayout"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/taewoojin/CarouselCollectionViewLayout.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/taewoojin/EZCarouselCollectionViewLayout.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "CarouselCollectionViewLayout/**/*.{h,m}"
-  spec.exclude_files = "CarouselCollectionViewLayout/Exclude"
+  spec.source_files  = "EZCarouselCollectionViewLayout/**/*.{h,m}"
+  spec.exclude_files = "EZCarouselCollectionViewLayout/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
