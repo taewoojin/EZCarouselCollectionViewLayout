@@ -1,6 +1,6 @@
 //
-//  CarouselCollectionViewLayout.swift
-//  CarouselCollectionViewLayout
+//  EZCarouselCollectionViewLayout.swift
+//  EZCarouselCollectionViewLayout
 //
 //  Created by 태우 on 2020/11/15.
 //
@@ -10,13 +10,13 @@ import UIKit
 
 
 @objc
-protocol CarouselCollectionViewLayoutDelegate: class {
+protocol EZCarouselCollectionViewLayoutDelegate: class {
     @objc optional var isOneStepPaging: Bool { get set }
 }
 
-class CarouselCollectionViewLayout: UICollectionViewFlowLayout {
+open class EZCarouselCollectionViewLayout: UICollectionViewFlowLayout {
     
-    weak var delegate: CarouselCollectionViewLayoutDelegate?
+    weak var delegate: EZCarouselCollectionViewLayoutDelegate?
     
     var latestOffset: CGFloat?
     
@@ -26,12 +26,12 @@ class CarouselCollectionViewLayout: UICollectionViewFlowLayout {
         scrollDirection = .horizontal
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         scrollDirection = .horizontal
     }
     
-    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+    open override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         guard let collectionView = collectionView,
               let delegate = delegate else { return proposedContentOffset }
         
@@ -98,7 +98,7 @@ class CarouselCollectionViewLayout: UICollectionViewFlowLayout {
 }
 
 
-private extension CarouselCollectionViewLayout {
+private extension EZCarouselCollectionViewLayout {
     
     func createProposedRect(collectionView: UICollectionView, proposedContentOffset: CGPoint) -> CGRect {
         let size = collectionView.bounds.size
