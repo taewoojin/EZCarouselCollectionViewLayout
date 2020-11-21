@@ -24,6 +24,7 @@ Create a collectionViewLayout object and assign it to the collectionView.
 
 ```swift       
 let layout = EZCarouselCollectionViewLayout()
+layout.delegate = self
 layout.itemSize = CGSize(width: 300, height: 500)
 collectionView.collectionViewLayout = layout
 ```
