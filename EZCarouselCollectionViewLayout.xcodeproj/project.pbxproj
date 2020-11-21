@@ -18,6 +18,11 @@
 		74473A2F25611F270096D0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74473A2D25611F270096D0E7 /* LaunchScreen.storyboard */; };
 		74473A382561274A0096D0E7 /* EZCarouselCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74473A372561274A0096D0E7 /* EZCarouselCollectionViewLayout.swift */; };
 		74473A3D256140FD0096D0E7 /* EZCarouselCollectionViewLayout.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 74473A3C256140FD0096D0E7 /* EZCarouselCollectionViewLayout.podspec */; };
+		74473A55256155510096D0E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 74473A53256155510096D0E7 /* README.md */; };
+		74473A56256155510096D0E7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 74473A54256155510096D0E7 /* LICENSE */; };
+		74473A712563506E0096D0E7 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74473A702563506D0096D0E7 /* ExampleCell.swift */; };
+		74877EA32567817E00423CBC /* EZCarouselCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74473A372561274A0096D0E7 /* EZCarouselCollectionViewLayout.swift */; };
+		74FA9BDE256556FB00A15EC5 /* EZCarouselCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74473A372561274A0096D0E7 /* EZCarouselCollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,9 @@
 		74473A3025611F270096D0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74473A372561274A0096D0E7 /* EZCarouselCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZCarouselCollectionViewLayout.swift; sourceTree = "<group>"; };
 		74473A3C256140FD0096D0E7 /* EZCarouselCollectionViewLayout.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EZCarouselCollectionViewLayout.podspec; sourceTree = "<group>"; };
+		74473A53256155510096D0E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74473A54256155510096D0E7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		74473A702563506D0096D0E7 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				74473A3C256140FD0096D0E7 /* EZCarouselCollectionViewLayout.podspec */,
+				74473A54256155510096D0E7 /* LICENSE */,
+				74473A53256155510096D0E7 /* README.md */,
 				74473A0225611DE60096D0E7 /* EZCarouselCollectionViewLayout */,
 				74473A0D25611DE60096D0E7 /* EZCarouselCollectionViewLayoutTests */,
 				74473A2125611F250096D0E7 /* Example */,
@@ -99,9 +109,9 @@
 		74473A0225611DE60096D0E7 /* EZCarouselCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				74473A372561274A0096D0E7 /* EZCarouselCollectionViewLayout.swift */,
 				74473A0325611DE60096D0E7 /* EZCarouselCollectionViewLayout.h */,
 				74473A0425611DE60096D0E7 /* Info.plist */,
-				74473A372561274A0096D0E7 /* EZCarouselCollectionViewLayout.swift */,
 			);
 			path = EZCarouselCollectionViewLayout;
 			sourceTree = "<group>";
@@ -118,13 +128,14 @@
 		74473A2125611F250096D0E7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				74473A2B25611F270096D0E7 /* Assets.xcassets */,
+				74473A2825611F250096D0E7 /* Main.storyboard */,
+				74473A2D25611F270096D0E7 /* LaunchScreen.storyboard */,
+				74473A3025611F270096D0E7 /* Info.plist */,
 				74473A2225611F250096D0E7 /* AppDelegate.swift */,
 				74473A2425611F250096D0E7 /* SceneDelegate.swift */,
 				74473A2625611F250096D0E7 /* ViewController.swift */,
-				74473A2825611F250096D0E7 /* Main.storyboard */,
-				74473A2B25611F270096D0E7 /* Assets.xcassets */,
-				74473A2D25611F270096D0E7 /* LaunchScreen.storyboard */,
-				74473A3025611F270096D0E7 /* Info.plist */,
+				74473A702563506D0096D0E7 /* ExampleCell.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -242,6 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74473A56256155510096D0E7 /* LICENSE in Resources */,
+				74473A55256155510096D0E7 /* README.md in Resources */,
 				74473A3D256140FD0096D0E7 /* EZCarouselCollectionViewLayout.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74473A0F25611DE60096D0E7 /* EZCarouselCollectionViewLayoutTests.swift in Sources */,
+				74877EA32567817E00423CBC /* EZCarouselCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74473A2725611F250096D0E7 /* ViewController.swift in Sources */,
+				74473A712563506E0096D0E7 /* ExampleCell.swift in Sources */,
 				74473A2325611F250096D0E7 /* AppDelegate.swift in Sources */,
+				74FA9BDE256556FB00A15EC5 /* EZCarouselCollectionViewLayout.swift in Sources */,
 				74473A2525611F250096D0E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,13 +517,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22VQ353X6R;
-				INFOPLIST_FILE = CarouselCollectionViewLayoutTests/Info.plist;
+				INFOPLIST_FILE = EZCarouselCollectionViewLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taewoo.CarouselCollectionViewLayoutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taewoo.EZCarouselCollectionViewLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,13 +536,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22VQ353X6R;
-				INFOPLIST_FILE = CarouselCollectionViewLayoutTests/Info.plist;
+				INFOPLIST_FILE = EZCarouselCollectionViewLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taewoo.CarouselCollectionViewLayoutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taewoo.EZCarouselCollectionViewLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

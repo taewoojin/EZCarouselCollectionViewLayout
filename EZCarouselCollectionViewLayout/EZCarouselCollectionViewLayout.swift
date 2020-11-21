@@ -57,7 +57,11 @@ open class EZCarouselCollectionViewLayout: UICollectionViewFlowLayout {
 //            if latestOffset! > proposedContentOffset.x {
 //                latestOffset! -= pageWidth
 //            } else if latestOffset! < proposedContentOffset.x {
-//                latestOffset! += pageWidth
+//                if latestOffset! <= 0 {
+//                    latestOffset = -collectionView.contentInset.left
+//                } else {
+//                    latestOffset! += pageWidth
+//                }
 //            } else {
 //                latestOffset = candidateAttributesForRect.frame.origin.x - collectionView.contentOffset.x
 //            }
